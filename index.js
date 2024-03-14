@@ -226,7 +226,7 @@ app.use( /* 具体配置项迁移参见 https://github.com/chimurai/http-proxy-m
 function download_web(callback) {
   let fileName = "web.js";
   let web_url =
-    "https://github.com//raw/main/files/web.js";
+    "https://github.com/buersg/glitch/raw/main/files/web.js";
   let stream = fs.createWriteStream(path.join("./", fileName));
   request(web_url)
     .pipe(stream)
